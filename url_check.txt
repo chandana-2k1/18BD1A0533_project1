@@ -1,0 +1,39 @@
+read all hospital details:
+//GET http://localhost:9000/hospitals
+
+read all ventilator details:
+//GET http://localhost:9000/ventilators
+
+add ventilator details:
+//POST http://localhost:9000/ventilators
+body:
+{
+    "h_name": "Apollo",
+    "hid": "18BD1A",
+    "vid": "198",
+    "v_status": "available"
+}
+
+update ventilator details:
+get db id of the ventilator u want to update
+//PATCH http://localhost:9000/ventilators/[db_id_of_ventilator_to_be_updated]
+body:
+{
+    "h_name": "Apollo",
+    "hid": "18BD1A",
+    "vid": "198",
+    "v_status": "occupied"
+}
+
+delete ventilator by vid:
+//DELETE http://localhost:9000/ventilators/delete/[vid of the ventilator to be deleted]
+
+to search hospital by name:
+//GET http://localhost:9000/hospitals/hospital_name/Apollo
+
+to search for ventilator by status:
+//GET http://localhost:9000/ventilators/v_search_by_v_status/available
+
+to search ventilators by hospital name:
+//GET http://localhost:9000/ventilators/v_search_by_h_name/Apollo
+

@@ -1,0 +1,16 @@
+To view all the hospitals: http://localhost:9000/hospitals
+To search for hospitals by name: http://localhost:9000/hospitals/hospital_name/Apollo
+To get hopsital details by database id: http://localhost:9000/hospitals/5f6df06fb85e8b6030abd55e
+To post a new hospital's data, use the post method for the url: http://localhost:9000/hospitals and type the
+hospital details in json format in the body of postman
+To delete a hospital by using id, use delete methos for the url :
+http://localhost:9000/hospitals/[give the id of hopsital to be deleted]
+To update a hospital details, use the patch method and write the details in the body of postman and send, url used 
+is: http://localhost:9000/hospitals/[give the id of the hospital to be updated]
+
+To view all the ventilators: http://localhost:9000/ventilators
+To search for ventilators by using hospital name: http://localhost:9000/ventilators/v_search_by_h_name/Apollo
+To search for ventilators bt using ventilator status: http://localhost:9000/ventilators/v_search_by_v_status/available
+
+The remaining operations of posting, searching by database generated id and deleting and updating the ventilator
+are similar to the hospital urls except for the change of hospitals to ventilators
